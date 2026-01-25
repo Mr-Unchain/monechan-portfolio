@@ -1,0 +1,64 @@
+{
+  "common": {
+    "siteTitle": "Monechan Portfolio",
+    "siteDescription": "もねちゃんのポートフォリオサイト"
+  },
+  "navigation": {
+    "home": "ホーム",
+    "about": "自己紹介",
+    "works": "作品一覧",
+    "contact": "お問い合わせ"
+  },
+  "hero": {
+    "title": "Creative Designer",
+    "subtitle": "UI/UX・Web・グラフィックデザイン",
+    "description": "ユーザー体験を大切にした、心地よいデザインを制作しています。"
+  },
+  "home": {
+    "featuredWorks": "Featured Works",
+    "viewAll": "すべての作品を見る"
+  },
+  "about": {
+    "title": "About",
+    "profile": "プロフィール",
+    "profileText": "デザイナーとして、UI/UX、Webデザイン、グラフィックデザインを手がけています。ユーザーにとって使いやすく、見た目も美しいデザインを心がけています。",
+    "skills": "Skills",
+    "skillDesign": "Design",
+    "skillDesignItems": "Figma, Adobe XD, Photoshop, Illustrator",
+    "skillDevelopment": "Development",
+    "skillDevelopmentItems": "HTML, CSS, JavaScript, React",
+    "skillOther": "Other",
+    "skillOtherItems": "プロジェクト管理, コミュニケーション"
+  },
+  "works": {
+    "title": "Works",
+    "all": "すべて",
+    "categories": {
+      "uiux": "UI/UX",
+      "web": "Web",
+      "graphic": "Graphic"
+    },
+    "viewProject": "View Project"
+  },
+  "workDetail": {
+    "overview": "概要",
+    "role": "担当",
+    "tools": "使用ツール",
+    "year": "制作年",
+    "backToWorks": "作品一覧に戻る"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "お仕事のご依頼やご質問など、お気軽にお問い合わせください。",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "message": "メッセージ",
+    "send": "送信する",
+    "namePlaceholder": "山田 太郎",
+    "emailPlaceholder": "example@email.com",
+    "messagePlaceholder": "お問い合わせ内容をご記入ください"
+  },
+  "footer": {
+    "copyright": "© 2024 Monechan. All rights reserved."
+  }
+}

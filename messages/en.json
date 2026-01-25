@@ -1,0 +1,64 @@
+{
+  "common": {
+    "siteTitle": "Monechan Portfolio",
+    "siteDescription": "Monechan's Portfolio Website"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "works": "Works",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Creative Designer",
+    "subtitle": "UI/UX, Web & Graphic Design",
+    "description": "Creating comfortable designs that prioritize user experience."
+  },
+  "home": {
+    "featuredWorks": "Featured Works",
+    "viewAll": "View All Works"
+  },
+  "about": {
+    "title": "About",
+    "profile": "Profile",
+    "profileText": "As a designer, I work on UI/UX, web design, and graphic design. I strive to create designs that are both user-friendly and visually beautiful.",
+    "skills": "Skills",
+    "skillDesign": "Design",
+    "skillDesignItems": "Figma, Adobe XD, Photoshop, Illustrator",
+    "skillDevelopment": "Development",
+    "skillDevelopmentItems": "HTML, CSS, JavaScript, React",
+    "skillOther": "Other",
+    "skillOtherItems": "Project Management, Communication"
+  },
+  "works": {
+    "title": "Works",
+    "all": "All",
+    "categories": {
+      "uiux": "UI/UX",
+      "web": "Web",
+      "graphic": "Graphic"
+    },
+    "viewProject": "View Project"
+  },
+  "workDetail": {
+    "overview": "Overview",
+    "role": "Role",
+    "tools": "Tools",
+    "year": "Year",
+    "backToWorks": "Back to Works"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Feel free to contact me for work inquiries or questions.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "namePlaceholder": "John Doe",
+    "emailPlaceholder": "example@email.com",
+    "messagePlaceholder": "Please enter your message"
+  },
+  "footer": {
+    "copyright": "© 2024 Monechan. All rights reserved."
+  }
+}
