@@ -21,7 +21,29 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-quicksand), var(--font-noto-sans-jp), sans-serif;
+  font-family: var(--font-space-grotesk), var(--font-noto-sans-jp), sans-serif;
+}
+
+/* Editorial utilities */
+.font-display {
+  font-family: var(--font-bebas-neue), sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 2px currentColor;
+  color: transparent;
+}
+
+/* Marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+  will-change: transform;
 }
 
 @layer utilities {

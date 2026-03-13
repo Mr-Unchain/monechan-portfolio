@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill /F /PID 3204 /PID 19220 /PID 23220 /PID 18948)",
+      "Bash(cmd /c \"taskkill /F /PID 3204 & taskkill /F /PID 19220 & taskkill /F /PID 23220 & taskkill /F /PID 18948\")",
+      "Bash(powershell -Command \"Stop-Process -Id 3204,19220,23220,18948 -Force -ErrorAction SilentlyContinue; Write-Host ''done''\")",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "mcp__Sanity__query_documents",
+      "Read(//c/Users/ayust/.claude/**)"
+    ]
+  },
+  "outputStyle": "Explanatory",
+  "enabledMcpjsonServers": [
+    "sanity"
+  ],
+  "enableAllProjectMcpServers": true
+}
