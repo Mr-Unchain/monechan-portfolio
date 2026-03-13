@@ -75,14 +75,16 @@ export default function WorkDetailClient({ work, locale }: WorkDetailClientProps
           transition={{ duration: 0.6, delay: 0.2 }}
           className="relative aspect-video mb-12 rounded-xl overflow-hidden bg-neutral-100 dark:bg-neutral-800"
         >
-          <Image
-            src={work.thumbnail}
-            alt={work.title[locale]}
-            fill
-            className="object-cover"
-            priority
-            unoptimized
-          />
+          {work.thumbnail && (
+            <Image
+              src={work.thumbnail}
+              alt={work.title[locale]}
+              fill
+              className="object-cover"
+              priority
+              unoptimized
+            />
+          )}
         </motion.div>
 
         {/* Project Info */}
@@ -135,7 +137,7 @@ export default function WorkDetailClient({ work, locale }: WorkDetailClientProps
           viewport={{ once: true, margin: '-100px' }}
           className="space-y-6"
         >
-          {work.images.map((image, index) => (
+          {work.images.filter(Boolean).map((image, index) => (
             <motion.div
               key={index}
               variants={galleryImageVariants}

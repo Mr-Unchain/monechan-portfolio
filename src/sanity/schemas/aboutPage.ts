@@ -4,8 +4,6 @@ export const aboutPageSchema = defineType({
   name: 'aboutPage',
   title: 'About Page',
   type: 'document',
-  // Singleton: prevent creating multiple documents
-  __experimental_actions: ['update', 'publish'],
   fields: [
     defineField({
       name: 'name',

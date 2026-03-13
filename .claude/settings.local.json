@@ -9,8 +9,13 @@
       "Bash(powershell -Command \"Stop-Process -Id 3204,19220,23220,18948 -Force -ErrorAction SilentlyContinue; Write-Host ''done''\")",
       "Bash(npm install:*)",
       "Bash(npx tsc:*)",
-      "mcp__Sanity__query_documents"
+      "mcp__Sanity__query_documents",
+      "Read(//c/Users/ayust/.claude/**)"
     ]
   },
-  "outputStyle": "Explanatory"
+  "outputStyle": "Explanatory",
+  "enabledMcpjsonServers": [
+    "sanity"
+  ],
+  "enableAllProjectMcpServers": true
 }

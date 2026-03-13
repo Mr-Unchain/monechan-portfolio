@@ -4,8 +4,6 @@ export const contactPageSchema = defineType({
   name: 'contactPage',
   title: 'Contact Page',
   type: 'document',
-  // Singleton: prevent creating multiple documents
-  __experimental_actions: ['update', 'publish'],
   fields: [
     defineField({
       name: 'heading',

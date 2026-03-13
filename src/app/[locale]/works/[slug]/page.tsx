@@ -3,7 +3,7 @@ import { getAllWorkSlugs, getWorkBySlug } from '@/sanity/queries/work';
 import WorkDetailClient from './WorkDetailClient';
 
 interface Props {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -12,9 +12,10 @@ export async function generateStaticParams() {
 }
 
 export default async function WorkDetailPage({ params }: Props) {
-  const work = await getWorkBySlug(params.slug);
+  const { locale: rawLocale, slug } = await params;
+  const work = await getWorkBySlug(slug);
   if (!work) notFound();
 
-  const locale = (params.locale === 'en' ? 'en' : 'ja') as 'ja' | 'en';
+  const locale = (rawLocale === 'en' ? 'en' : 'ja') as 'ja' | 'en';
   return <WorkDetailClient work={work} locale={locale} />;
 }

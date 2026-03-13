@@ -47,13 +47,15 @@ export default function WorkCard({ work, index }: WorkCardProps) {
 
         {/* Image */}
         <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100 dark:bg-neutral-800">
-          <Image
-            src={work.thumbnail}
-            alt={work.title[locale]}
-            fill
-            className="object-cover transition-transform duration-700 group-hover:scale-105"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
+          {work.thumbnail && (
+            <Image
+              src={work.thumbnail}
+              alt={work.title[locale]}
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+          )}
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <span className="px-5 py-2 bg-white dark:bg-neutral-900 text-sm font-semibold tracking-wide">
