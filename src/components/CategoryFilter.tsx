@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-import type { WorkCategory } from '@/data/works';
+import type { WorkCategory } from '@/sanity/queries/work';
 
 interface CategoryFilterProps {
   activeCategory: WorkCategory | 'all';

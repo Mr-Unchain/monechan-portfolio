@@ -26,24 +26,24 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md">
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md border-b border-neutral-200/60 dark:border-neutral-800/60">
+      <nav className="max-w-6xl mx-auto px-8 sm:px-14 lg:px-20">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="text-xl font-bold tracking-tight">
-            monechan
+          <Link href="/" className="font-display text-2xl tracking-wider">
+            MONECHAN
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-10">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`relative py-2 text-sm font-medium transition-colors ${
+                className={`relative py-2 text-xs font-semibold tracking-[0.15em] uppercase transition-colors ${
                   isActive(item.href)
                     ? 'text-neutral-900 dark:text-white'
-                    : 'text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white'
+                    : 'text-neutral-400 hover:text-neutral-900 dark:text-neutral-500 dark:hover:text-white'
                 }`}
               >
                 {item.label}
